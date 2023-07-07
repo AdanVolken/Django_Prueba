@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web con django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css '%}">
+</head>
+<body>
+
+    <header>
+        <div id = "logo">
+            <img src = "{% static 'images/logo.png' %}" />
+
+            <h1> Sitio Web con Django </h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/biblioteca">Biblioteca </a> 
+            </li>
+            <li>
+                <a href="/hola_mundo">Hola Mundo </a> 
+            </li>
+             <li>
+                <a href="/contacto">Contacto </a> 
+            </li>
+        </ul>
+    </nav>
+
+    <div class = "barra">
+        <span class = "esquina_I"></span>
+        <span class = "esquina_barra"></span>
+        <span class = "esquina_D"></span>
+
+    </div>
+    
+    <div id="content">
+        <div class = "box">
+            <h2 class = "title">Titulo de Prueba </h2>
+            {% block content %}
+            <p>Probando generar pagina de prueba </p>
+            {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        Aprendiendo Django
+    </footer>
+</body>
+</html>
