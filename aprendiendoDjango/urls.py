@@ -28,5 +28,5 @@ urlpatterns = [
     path('biblioteca/', views.biblioteca, name = "biblioteca"),
     path('contacto/>', views.contacto, name = "contacto"),
     path('contacto/<str:nombre>', views.contacto, name = "contacto"),
-    path('contacto/<str:nombre>/<str:apellido>', views.contacto, name = "contacto")
+    path('contacto/<str:nombre>/<str:apellido>', views.contacto, name = "contacto"),
 ]

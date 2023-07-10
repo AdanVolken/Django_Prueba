@@ -8,13 +8,13 @@ layout = ("""
     <br><hr/><br>
     <ul>
         <li>
-            <a href="/biblioteca">Biblioteca </a> 
+            <a href="{% url 'biblioteca' %}">Biblioteca </a> 
         </li>
         <li>
-            <a href="/hola_mundo">Hola Mundo </a> 
+            <a href="{% url 'HolaMundo' %}">Hola Mundo </a> 
         </li>
          <li>
-            <a href="/contacto">Contacto </a> 
+            <a href="{% url 'contacto' %}">Contacto </a> 
         </li>
     </ul>
     <hr/>
@@ -55,11 +55,9 @@ def biblioteca(request):
 
 def contacto(request, nombre = "", apellido = ""):
 
-    html = ""
-
-    if nombre and apellido:
-            html = f"<h2>{nombre}  {apellido}</h2>"
+    
+    html += f"<h2>{nombre}  {apellido}</h2>"
 
 
-    return HttpResponse (layout + f"<h2> Hola como estas  {html}  mi numero es 342323 </h2>")
+    return HttpResponse(layout + f"<h2> Hola como estas</h2>" + html )
     
