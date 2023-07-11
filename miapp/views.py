@@ -61,3 +61,8 @@ def contacto(request, nombre = "", apellido = ""):
 
     return HttpResponse(layout + f"<h2> Hola como estas</h2>" + html )
     
+
+def crear_articulo(request):
+
+    
+    return HttpResponse("<h1> Usuario creado: </h1>")
