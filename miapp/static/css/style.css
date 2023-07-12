@@ -131,6 +131,49 @@ nav ul li a:hover{
     border-radius: 2px;
 }
 
+.box form{
+    width: 40%;
+}
+
+.box from input,
+.box from label{
+   display: block;
+   padding: 5px;
+   padding-left: 0px;
+
+}
+
+.box from input[type= "text"],
+.box from textarea{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.box from select{
+    width: 15%;
+    padding: 5px;
+}
+
+.box from input[type = "submit"],
+.box from input[type = "button"],
+.box from button{
+    padding: 10px;
+    margin-top: 15px;
+    background: #2ba977;
+    border: 1px solid black;
+    color: white;
+    border-radius: 4px;
+    transition: 300ms all;
+
+}
+
+.box from input[type = "submit"]:hover,
+.box from input[type = "button"]:hover,
+.box from button:hover{
+    cursor: pointer;
+    background: #249266;
+
+}
 .title{
     color: #444;
     letter-spacing: 1px;

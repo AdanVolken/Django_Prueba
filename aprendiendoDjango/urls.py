@@ -30,4 +30,10 @@ urlpatterns = [
     path('contacto/<str:nombre>', views.contacto, name = "contacto"),
     path('contacto/<str:nombre>/<str:apellido>', views.contacto, name = "contacto"),
     path('crear_articulo/<str:title>/<str:content>/<str:public>', views.crear_articulo, name = "CrearArticulo"),
+    path('articulo/', views.articulo, name = "articulo"),
+    path('editar_articulo/<int:id>', views.editar_articulo,name = "EditarArticulo"),
+    path('articulos/', views.articulos, name = 'articulos'),
+    path('borrar_articulo/<int:id>', views.borrar_articulo, name = 'borrar'),
+    path('crear_articulo/', views.create_article, name = "crear"),
+    path('save_articulo/' , views.save_articulo, name = "save")
 ]

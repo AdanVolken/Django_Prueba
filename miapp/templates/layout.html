@@ -30,7 +30,10 @@
                 <a href="/contacto">Contacto </a> 
             </li>
             <li>
-                <a href="/crear_articulo">Crear Articulo </a> 
+                <a href="/articulos">Articulos </a> 
+            </li>
+            <li>
+                <a href="{% url 'crear' %}"> Crear Articulos </a> 
             </li>
         </ul>
     </nav>
@@ -44,7 +47,6 @@
     
     <div id="content">
         <div class = "box">
-            <h2 class = "title">Titulo de Prueba </h2>
             {% block content %}
             <p>Probando generar pagina de prueba </p>
             {% endblock %}
